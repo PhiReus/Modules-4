@@ -1,0 +1,15 @@
+.boxA
+{
+    width: 600;
+    padding: 10px;
+    margin: 20px auto;
+    border: solid 2px #F00;
+    min-height: 150px;
+}
+.boxA div
+{
+    padding: 3px;
+}
+.bg01{
+    background-color: burlywood;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+
+    //html(val) - html()
+    $(document).ready(function(){
+        $("#submit").click(function(){
+            var tmp = $("#boxA").html();
+            console.log(typeof tmp);
+            console.log($.type(tmp));
+
+            $("#boxB").html(tmp);
+        })
+    })
+
+
+</script>
+</head>
+<body>
+    <h1 style="text-align: center;"> jQuery(val) </h1>
+    <div id="boxA" class="boxA">
+        <div>1. CSS</div>
+        <div>2. HTML</div>
+    </div>
+    <div id="boxB" class="boxA">
+        
+    </div>
+    <center>
+        <input type="button" class="button" id="submit" value="submit">
+    </center>
+</body>
+</html>

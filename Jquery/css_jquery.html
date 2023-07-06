@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+        /*
+        1. Jquery (HTML objiect)
+        */
+
+       $(document).ready(function(e){
+        /*
+        1. Jquery (HTML objiect)
+            var boxA = document.getElementById("boxA"); //HTML object
+            console.log(boxA);
+            $(boxA).css("border-color","blue")
+        */
+        //2. Jquery(selectors)
+        //$("#boxA").css("border-color","green")
+
+        //3. Jquery(HTML string)
+
+        // var str = '<span style="color: red; font-size: 20px"> Jquery Basic </span>'
+        // console.log(str);
+        // $(str).appendTo("#boxA");
+
+        //4. Jquery(HTML string,Attribute object)
+        $("<div></div>",{"class":"bg01",text: "Jquery master"}).appendTo("#boxA");
+
+    })
+
+
+</script>
+</head>
+<body>
+    <h1 style="text-align: center;"> jQuery(val) </h1>
+    <div id="boxA" class="boxA">
+
+    </div>
+</body>
+</html>

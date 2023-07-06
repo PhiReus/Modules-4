@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,14 @@ Route::get('/customers/{customerId}', [CustomerController::class, 'show'])->name
 Route::post('/customers', [CustomerController::class, 'store'])->name('customers.store');
 Route::put('/customers/{customerId}', [CustomerController::class, 'update'])->name('customers.update');
 Route::delete('/customers/{customerId}', [CustomerController::class, 'destroy'])->name('customers.destroy');
+
+// Đăng ký tài khoản mới
+Route::post('/register', [AuthController::class,'register']);
+
+// Đăng nhập và nhận mã truy cập
+Route::post('/login', [AuthController::class,'login']);
+
+// Đăng xuất
+Route::post('/logout', [AuthController::class,'logout']);
+
+
